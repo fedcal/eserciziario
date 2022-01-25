@@ -23,3 +23,13 @@ Si facciano le seguenti ipotesi:
  [ ] Le righe sono ordinate secondo l’istante di tempo;
  [ ] Si ipotizzi che i mezzi siano sempre in movimento dall’istante della prima misurazione all’istante dell’ultima;
  [ ] Più righe possono riguardare lo stesso mezzo pubblico in istanti diversi;
+
+Se l'utente inserisce -d  il programma deve stampare per ogni mezzo la distanza percorsa
+durante la giornata (sulla base delle rilevazioni disponibili) ipotizzando che il mezzo si
+muova in linea retta da un punto a un altro in metri (arrotondare all’intero più vicino).
+Riportare la distanza in metri (arrotondare all’intero più vicino), indicando ora della prima
+rilevazione e ora dell’ultima rilevazione (nel formato hh:mm:ss).
+
+Se l'utente inserisce -v il programma deve stampare per ogni mezzo la velocità media tenuta nel
+corso della giornata (ottenuta come somma delle distanze effettuate diviso il tempo
+intercorso tra la prima e l’ultima misurazione)
