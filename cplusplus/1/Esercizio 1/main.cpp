@@ -31,6 +31,26 @@ Si facciano le seguenti ipotesi:
 
 using namespace std;
 
+//Creiamo una struttura in cui memorizzare i dati che verranno letti dal file
+struct file{
+    int numero_mezzo;
+    int numero_linea;
+    int ascissa;
+    int ordinata;
+    int tempo
+}tipo_file[20]; //la dimensione massima delle linee è di 20, quindi in un dato istante si potrà avere la capienza massima
+
+//Definiamo le variabili globali comuni alla funzione main e alle sotto funzioni
+FILE *paf;
+int numero_elementi;
+
+// Adesso andiamo a definire i prototipi delle funzioni che ci serviranno per portare a termine il compito della traccia
+void caricare_file(); //funzione per caricare il file
+void ordinare_file(); //funzione per ordinare il file
+void numero_elementi_file();
+void ditanza_percorsa();
+void velocita_media();
+
 int main()
 {
     cout << "Hello world!" << endl;
